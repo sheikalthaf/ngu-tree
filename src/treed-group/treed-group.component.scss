@@ -1,0 +1,23 @@
+:host {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 200px;
+  margin-left: 0.5em;
+  display: none;
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid;
+  }
+}
+
+:host.active {
+  display: block !important;
+}
